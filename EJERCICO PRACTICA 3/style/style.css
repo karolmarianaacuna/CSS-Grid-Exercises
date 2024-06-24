@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+h1{
+    text-align: center;
+}
+.tabla{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template: 
+      'celda1 celda1 celda2 celda2'
+      'celda3 celda3 celda4 celda4'
+      'celda5 celda5 celda4 celda4';
+    margin: 0 auto;
+    width: 500px;
+} 
+.tabla div{
+    background: #697C88;
+    color: white;
+    padding: 18px;
+    text-align: center;   
+}
+
+ 
+  .celda1{ grid-area: celda1}
+  .celda2{ grid-area: celda2;}
+  .celda3{ grid-area: celda3;}
+  .celda4{ grid-area: celda4;}
+  .celda5{ grid-area: celda5}
+
+
+.listas{
+    background: white;
+    display:grid;
+    grid-gap: 1px;
+    grid-template: ' a a ' auto
+}
+.item1{
+    grid-area: a
+}  
+
+.listas div{
+    background:#DBDAF5;
+    padding: 18px;
+    color: black;
+}
